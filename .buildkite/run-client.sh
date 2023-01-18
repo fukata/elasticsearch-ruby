@@ -26,6 +26,7 @@ docker run \
        --env "TEST_SUITE=${TEST_SUITE}" \
        --env "ELASTIC_USER=elastic" \
        --env "BUILDKITE=true" \
+       --env "SINGLE_TEST=bulk/10_basic.yml" \
        --volume $repo:/usr/src/app \
        --name elasticsearch-ruby \
        --rm \
